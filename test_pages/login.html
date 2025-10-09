@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body_form">
+    <div class="menu_button">
+        <img src="images/icons8-меню.svg" style="width: 100%; height: 45px;">
+    </div>
+        <div style="position:absolute; width: 100%; left:0; top:0;">
+        <header class="header_container">
+            <div class="menu">
+                <div class="menu_link">
+                    <a href="#">
+                        Главная
+                    </a>
+                    <a href="#">
+                        Каталог
+                    </a>
+                    <a href="#">
+                        Отзывы
+                    </a>
+                    <a href="login.html">
+                        Войти
+                    </a>
+                </div>
+            </div>
+            <div class="profile_icon_container">
+                <div style="width: 35px; height: 35px;">
+                    <a href="#" class="dop-window" data-window="Профиль">
+                        <label for="popup1" class="label_cursor_pointer">
+                            <img src="images/icon-white.svg" style="width: 100%; height: 100%;" style="cursor:pointer">
+                        </label>
+                    </a>
+                </div>
+            </div>
+            <input type="checkbox" class="popup_window_checkbox" id="popup1">
+            <div class="popup">
+                <ul style="margin-left: 10px; margin-right: 5px;">
+                <li style="display:inline-block"><a href="#">Редактировать профиль</a> </li>
+                <li><a href="#">Настройки</a></li>
+                <li><a href="#">Выйти</a></li>
+            </div>
+        </header>
+    </div>
+    <form action="#" class="forma">
+        <a href="test_page2.html" style="align-self: self-start;">
+            <img src="images/back_button2.svg" style=" user-select: none; width: 27px;">
+        </a>
+        <div class="form_row">
+            <span class="form_hint">Введите ваше имя</span>
+            <input type="text" class="field" placeholder="Илья" required>
+        </div>
+        <div class="form_row">
+            <span class="form_hint">Введите ваш пароль</span>
+            <input type="password" class="field" placeholder="Например: 410303188">
+        </div>
+        <div class="form_row">
+            <span class="form_hint">Введите кодовую фразу</span>
+            <textarea class="field field_textarea" placeholder="Я люблю собак)"></textarea>
+        </div>
+        <div class="form_row">
+        <label class="form_hint label_cursor_pointer">       
+            Даю согласие на обработку персональных данных
+            <input class="checkbox" type="checkbox" required>
+        </label>
+        </div>
+        <div class="radio_button">
+            <label style="margin-right: 35px" class="label_cursor_pointer">
+                <input type="radio" name="gender">Мужской
+            </label>
+            <label class="label_cursor_pointer">
+                <input type="radio" name="gender">Женский
+            </label>
+        </div>
+        <button type="submit" class="button">Отправить</button>
+    </form>
+</body>
+</html>
